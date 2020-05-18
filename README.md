@@ -121,6 +121,25 @@ useAxios는 HTTP requests client axios를 위한 wrapper 같은 것
 ## 1.5 Updating Header part One
 
 - navigator 안에 있는 모든 screen은 navigation prop을 가짐. 또한 route 라는 것도 가짐.
+  - https://reactnavigation.org/docs/route-prop
   - route가 가지는 prop
     - key, name, params
 - 이 navigation prop은 나에게 조종할 수 있도록 허용하는 것(button 달아서 스크린 이동 같은 것.) 뿐만 아니라 부모 navigator랑 소통할 수 있게도 해줌. -> 소통을 통해 부모 navigator의 header title을 변경 할 수 있음.
+
+## 1.6 Updating Header part Two
+
+- useLayoutEffect : useEffect와 비슷하지만 큰 차이점은 레이아웃 변경이 다 끝난후에 작동함.
+- 아래 두개가 같은 것임.
+
+```
+  useLayoutEffect(() => {
+    navigation.setOptions({
+      title: getHeaderName(),
+    });
+  });
+  useEffect(() => {
+    navigation.setOptions({
+      title: getHeaderName(),
+    });
+  }, [route]);
+```
