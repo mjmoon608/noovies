@@ -180,3 +180,5 @@ headerStyle: {
       headerTintColor: "white",
     }}/>
 ```
+
+## 1.8 Adding the icons
