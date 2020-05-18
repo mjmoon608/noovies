@@ -143,3 +143,40 @@ useAxios는 HTTP requests client axios를 위한 wrapper 같은 것
     });
   }, [route]);
 ```
+
+## 1.7 Styling Nav
+
+- Stack Navigation의 headerShown 옵션으로 headerbar를 끌 수 있다.
+- Stack Navigation의 headerStyle 옵션으로 styling을 할 수 있음.
+
+```
+headerStyle: {
+        backgroundColor: name === "TV" ? "blue" : "white",
+      },
+```
+
+- screenOptions 으로 모든 screen에 적용되는 header를 styling 할 수 있음.
+
+```
+ <Stack.Navigator
+    screenOptions={{
+      headerStyle: {
+        backgroundColor: "black",
+      },
+      headerTintColor: "white",
+    }}
+  >
+```
+
+- TintColor는 해당 요소에 있는 텍스트 및 다른 아키텍쳐 모두를 포함한다. font만 바꾸는 color와 차이가 있음.
+
+- 만약 특정 스크린에만 하고 싶다면 해당 screen에 options를 주면 됨.
+
+```
+<Stack.Screen name="Detail" component={DetailScreen} options={{
+      headerStyle: {
+        backgroundColor: "black",
+      },
+      headerTintColor: "white",
+    }}/>
+```
