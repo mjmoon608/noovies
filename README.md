@@ -94,3 +94,33 @@ useAxios는 HTTP requests client axios를 위한 wrapper 같은 것
 - React Navigation을 사용할 거임
 
 - Stack Navigation : 모든 것들의 맨 위로 새로운 카드가 올라옴.
+
+- https://reactnavigation.org/docs/navigation-prop/
+- Stack Navigation에서 Screen이 가지는 props
+  - addListener : 네비게이터의 이벤트 업데이트 구독
+  - canGoBack
+  - dangerouslyGetParent
+  - dangerouslyGetState
+  - dispatch : 액션을 라우터로 보내기
+  - goBack : 활성 화면을 닫고 스택으로 다시 이동
+  - isFocused : 화면 초점이 맞았는지 확인
+  - navigate : 다른 화면으로 이동하여 수행해야 할 작업을 파악하십시오.
+  - pop
+  - popToTop
+  - push
+  - removeListener
+  - replace
+  - reset : 네비게이터 상태를 지우고 새 경로로 교체
+  - setOptions : 화면 옵션 업데이트 -> title 변경 등.
+  - setParams : 경로 매개 변수 변경
+
+## 1.4 Tabs Navigation
+
+- https://reactnavigation.org/docs/bottom-tab-navigator
+
+## 1.5 Updating Header part One
+
+- navigator 안에 있는 모든 screen은 navigation prop을 가짐. 또한 route 라는 것도 가짐.
+  - route가 가지는 prop
+    - key, name, params
+- 이 navigation prop은 나에게 조종할 수 있도록 허용하는 것(button 달아서 스크린 이동 같은 것.) 뿐만 아니라 부모 navigator랑 소통할 수 있게도 해줌. -> 소통을 통해 부모 navigator의 header title을 변경 할 수 있음.

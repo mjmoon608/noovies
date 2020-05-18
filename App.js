@@ -6,7 +6,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { Asset } from "expo-asset";
 import { Ionicons } from "@expo/vector-icons";
 
-import Stack from "./navigation/StackNavigation";
+import Stack from "./navigation/Stack";
 
 const cacheImages = (images) =>
   images.map((image) => {
