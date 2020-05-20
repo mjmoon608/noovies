@@ -189,3 +189,8 @@ headerStyle: {
 
 - axios는 니코가 주로 request를 만들던 library임
   - https://github.com/axios/axios
+
+## 2.1 API Layer part Tow
+
+- https://www.themoviedb.org/settings/api
+- 영화 정보는 여기서 가져올 것.
