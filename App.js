@@ -27,7 +27,7 @@ export default function App() {
     //images는 promise들의 array임
     const images = cacheImages([
       //가져올 이미지 url이나 파일 경로 쓰기
-      "https://unsplash.com/photos/TJ2PWiNAHh8",
+      // "https://unsplash.com/photos/TJ2PWiNAHh8",
       require("./assets/splash.png"),
     ]);
 

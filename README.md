@@ -182,3 +182,10 @@ headerStyle: {
 ```
 
 ## 1.8 Adding the icons
+
+## 2.0 API Layer part One
+
+- 처음에 API랑 소통할 수 있게 interface 같은 것을 만들고 나서 예쁘게 만들어라.
+
+- axios는 니코가 주로 request를 만들던 library임
+  - https://github.com/axios/axios
